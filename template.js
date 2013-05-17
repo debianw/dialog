@@ -1,0 +1,1 @@
+module.exports = '<div id="dw-dialog" class="dw-hide">\n  <div class="dw-content">\n    <span class="dw-title"></span>\n    <a href="#" class="dw-close">× <em>close</em></a>\n    <div class="dw-body">\n      <p>Message</p>\n    </div>\n  </div>\n</div>';

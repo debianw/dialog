@@ -1,0 +1,92 @@
+#dw-dialog {
+  position: fixed;
+  left: 50%;
+  top: 150px;
+  max-width: 600px;
+  min-width: 250px;
+  border: 1px solid #eee;
+  background: white;
+  z-index: 1000;
+}
+
+#dw-dialog .dw-content {
+  padding: 15px 20px;
+}
+
+#dw-dialog h1 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#dw-dialog p {
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+}
+
+/* close */
+
+#dw-dialog .dw-close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  text-decoration: none;
+  color: #888;
+  font-size: 16px;
+  font-weight: bold;
+  display: none;
+}
+
+#dw-dialog .dw-close em {
+  display: none;
+}
+
+#dw-dialog.dw-closable .close {
+  display: block;
+}
+
+#dw-dialog .dw-close:hover {
+  color: black;
+}
+
+#dw-dialog .dw-close:active {
+  margin-top: 1px;
+}
+
+/* slide */
+
+#dw-dialog.dw-slide {
+  -webkit-transition: opacity 300ms, top 300ms;
+  -moz-transition: opacity 300ms, top 300ms;
+}
+
+#dw-dialog.dw-slide.dw-hide {
+  opacity: 0;
+  top: -500px;
+}
+
+/* fade */
+
+#dw-dialog.dw-fade {
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+}
+
+#dw-dialog.dw-fade.dw-hide {
+  opacity: 0;
+}
+
+/* scale */
+
+#dw-dialog.dw-scale {
+  -webkit-transition: -webkit-transform 300ms;
+  -moz-transition: -moz-transform 300ms;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+#dw-dialog.dw-scale.dw-hide {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+}
